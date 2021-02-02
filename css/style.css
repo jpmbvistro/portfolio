@@ -1,0 +1,422 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+
+Colors:
+Orange: #ff8869
+Purple: #bd6a9a, rgba(189, 106, 154, 1)
+Off White: #fff0e9
+Dark blue: #173753
+Brown: #6d5850
+/*******************************************/
+
+a {
+  text-decoration: none;
+}
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: "Sifonn Pro", Arial, sans-serif;
+}
+
+em {
+  font-weight: 700;
+}
+
+header {
+
+  background-color: rgba(255, 136, 105, .6);
+  background-size: cover;
+  min-height: 600px;
+  color: white;
+}
+
+p {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+
+
+h1 {
+  font-size: 7vw;
+  color: white;
+  font-family: "Sifonn Pro";
+  font-weight:normal;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Niconne";
+  font-size: 70px;
+  padding: 20px 0;
+}
+
+h3 {
+  font-family: "Sifonn Pro";
+  font-size: 50px;
+}
+
+h4 {
+  color: white;
+  text-align:center;
+  font-size: 35px;
+  font-family: "Sifonn Pro";
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+h5 {
+  font-size: 2vw;
+}
+
+.about-me {
+  text-align: center;
+  background-color: rgba(189, 106, 154, .9);
+  background-size: cover;
+  height: 650px;
+  color: #fff0e9;
+  position: relative;
+  padding:30px 0;
+  -webkit-box-shadow: inset 20px 20px 0 0 #ff8869, inset -20px -20px 0 0 #ff8869;
+  -moz-box-shadow: inset 20px 20px 0 0 #ff8869, inset -20px -20px 0 0 #ff8869;
+  box-shadow: inset 20px 20px 0 0 #ff8869, inset -20px -20px 0 0 #ff8869;
+}
+
+.contact {
+  padding: 100px;
+}
+
+.se-details {
+  background-color: #fff0e9;
+  padding: 100px 0 100px 0;
+  color: #6d5850;
+}
+
+.portfolio-prev {
+  color: #fff0e9;
+  background-color: #ff8869;
+}
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.readable-width {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.flex-center-space {
+
+}
+
+.flex-col > *{
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.flex-col > * + * {
+  margin-left: 10px;
+
+}
+
+.flex-container {
+  display: flex;
+}
+
+
+
+.flex-sidebar-main {
+  flex: 1 1 60%;
+}
+
+.flex-sidebar-side {
+  flex: 1 1 40%;
+}
+
+/*
+  contents spread apart
+*/
+.flex-spread {
+  justify-content: space-between;
+}
+
+.flex-vcenter {
+  align-items: center;
+}
+
+.flex-vert {
+  flex-direction: column;
+}
+
+.portfolio-prev {
+  padding: 30px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+header::before {
+  content: "";
+  background-image: url(../assets/swamp-31.jpg);
+  background-size: cover;
+  min-height:600px;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  filter: saturate(0);
+  z-index: -1;
+  background-position: center;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+
+}
+
+textarea {
+  
+}
+
+.about-me::before {
+  content: "";
+  background-image: url(../assets/photos/fea_food_chinatown2.jpg);
+  background-size: cover;
+  height:650px;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  filter: saturate(0);
+  z-index: -1;
+  background-position: center;
+}
+
+.about-me h2 {
+  font-family: "Sifonn Pro";
+}
+
+.about-me .readable-width {
+  max-width: 500px;
+}
+
+.about-me > section::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 200px solid #ff8869;
+  border-right: 200px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-me > section::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 200px solid #ff8869;
+  border-left: 200px solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.card {
+
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  align-items: stretch;
+}
+
+.card > section {
+  height: 175px;
+  border-radius: 10px;
+  background-color: green;
+  width: 125px;
+  padding: 10px 0;
+  -webkit-box-shadow: 5px 5px 2px 0 #6d5850;
+  -moz-box-shadow: 5px 5px 2px 0 #6d5850;
+  box-shadow: 5px 5px 2px 0 #6d5850;
+}
+
+
+.card-high {
+  justify-content: flex-start;
+}
+
+.card-high > section {
+  background-color: #ff8869;
+}
+
+.card-high > section > section.card-mid h4 {
+  font-size: 28px;
+  line-height: 2em;
+}
+
+.card-mid {
+  justify-content: center;
+}
+
+.card-mid > section {
+  background-color: #173753;
+}
+
+.card-low {
+  justify-content: flex-end;
+}
+
+.card-low > section {
+  background-color: #bd6a9a;
+}
+
+.portfolio-prev  h2 {
+  text-align: center;
+  font-family: "Sifonn Pro";
+}
+
+.portfolio-prev img {
+  width: 100%;
+}
+
+.portfolio-prev p {
+  text-align: center;
+  margin: 50px 0 30px 0;
+  font-size: 30px;
+}
+
+
+
+.portfolio-prev > section > section{
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.portfolio-prev > section > section > section{
+  border-radius: 5px;
+  border: 5px solid #bd6a9a;
+  width: 15vw;
+  height: 20vw;
+  text-align: center;
+  padding: 10px;
+}
+
+.portfolio-prev > section > section > section + section {
+  margin-left: 50px;
+}
+
+.profile-picture {
+  width: 230px;
+  border-radius: 50%;
+  border: 8px solid #ff8869;
+  /* outline: 5px dotted #fff0e9;
+  shape-outside: circle(50%); */
+}
+
+
+.cards {
+  padding-right: 20px;
+
+  justify-content: space-around;
+}
+
+.resume{
+  text-align: center;
+
+  border: 20px solid #173753;
+  width: 33%;
+}
+
+.resume > * {
+  padding: 5px 0;
+}
+
+.resume p {
+  font-family: "Niconne";
+  font-family: 30px;
+  color: grey;
+}
+
+.resume h3 a {
+  color: #ff8869;
+  text-decoration: underline;
+  font-size: 40px;
+}
+
+.se-details > section {
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.se-details > section > section.flex-sidebar-side {
+  border-left: 1px solid rgba(109, 88, 80, .3);
+  padding: 0 50px;
+}
+
+.se-details > section > section.cards > .card > section{
+  outline: 3px solid white;
+  outline-offset: -25px;
+}
+
+
+.title {
+  margin-left: 30px;
+  text-align: center;
+}
+
+.title ul {
+  justify-content: center;
+  font-size: 1.5vw;
+}
+
+
+.title li + li {
+  list-style: circle;
+  list-style-position: inside;
+  margin-left: 20px;
+
+}

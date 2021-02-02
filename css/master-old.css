@@ -1,0 +1,126 @@
+
+/* Shay Howe */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*for grouping floating elements*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+
+/* Personal Additions */
+/*
+Onxy 39393A
+Dark Sea Green 86BA90
+Ivory FCFCED
+Tan Crayola DFA06E
+Fuzzy Wuzzy CD5D67
+*/
+
+a {
+  text-decoration: none;
+  color: #39393A;
+}
+
+footer, header {
+	background-color: #FCFCED;
+}
+
+html {
+  color: #39393A;
+
+}
+
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+
+
+h1 {
+  font-size: 100px;
+  padding: 10px;
+  margin: 10px;
+}
+
+h2 {
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+p {
+  font-family: helvetica;
+}
+/*general container spacing*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+  /*background-color: brown;*/
+}
+
+.content {
+	max-width: 1000px;
+}
+
+#about {
+  background-color: white;
+}
+
+#profile{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#profile img {
+  border-radius: 50%;
+  width: 50%;
+  shape-outside: circle();
+  float: left;
+  margin: 50px;
+}
+
+#profile h1 {
+  margin-top: 100px;
+}
+
+#profile nav{
+  margin-top: 50px;
+}
+
+#profile li{
+  text-decoration: none;
+  /*font-family: helvetica;*/
+  font-size: 50px;
+  font-weight: 100;
+  margin-left: 0px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  margin-top: 40px;
+}
