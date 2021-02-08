@@ -122,6 +122,16 @@ h5 {
   padding: 100px;
 }
 
+.emailMe {
+  border-radius: 1rem;
+  background-color: #d7a498;
+  padding:.5rem;
+}
+
+.emailMe > a {
+  color: white;
+}
+
 .se-details {
   background-color: #fff0e9;
   padding: 100px 0 100px 0;
@@ -218,7 +228,7 @@ input {
 }
 
 textarea {
-  
+
 }
 
 .about-me::before {
