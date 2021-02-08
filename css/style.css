@@ -75,7 +75,7 @@ p {
 
 
 h1 {
-  font-size: 7vw;
+  font-size: 5rem;
   color: white;
   font-family: "Sifonn Pro";
   font-weight:normal;
@@ -103,7 +103,7 @@ h4 {
 }
 
 h5 {
-  font-size: 2vw;
+  font-size: 1.75rem;
 }
 
 .about-me {
@@ -112,7 +112,7 @@ h5 {
   background-size: cover;
   color: #fff0e9;
   position: relative;
-  padding:30px 0;
+  padding:40px 0 60px 0;
   -webkit-box-shadow: inset 20px 20px 0 0 #ff8869, inset -20px -20px 0 0 #ff8869;
   -moz-box-shadow: inset 20px 20px 0 0 #ff8869, inset -20px -20px 0 0 #ff8869;
   box-shadow: inset 20px 20px 0 0 #ff8869, inset -20px -20px 0 0 #ff8869;
@@ -235,7 +235,7 @@ textarea {
   content: "";
   background-image: url(../assets/photos/fea_food_chinatown2.jpg);
   background-size: cover;
-  height:650px;
+  height:100%;
   position: absolute;
   top:0;
   left:0;
@@ -349,8 +349,8 @@ textarea {
 .portfolio-prev > section > section > section{
   border-radius: 5px;
   border: 5px solid #bd6a9a;
-  width: 15vw;
-  height: 20vw;
+  width: 10rem;
+  height: 14rem;
   text-align: center;
   padding: 10px;
 }
@@ -420,7 +420,7 @@ textarea {
 
 .title ul {
   justify-content: center;
-  font-size: 1.5vw;
+  font-size: 1.10rem;
 }
 
 
