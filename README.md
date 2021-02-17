@@ -1,6 +1,6 @@
 # Portfolio Site
 
-This Portfolio Site is used to highlight my techstack, bio, portfolio pieces, and provide visitors with the means to contact me.
+This Portfolio Site is used to highlight my tech-stack, bio, portfolio pieces, and provide visitors with the means to contact me.
 
 ## Current Hosting
 
@@ -13,9 +13,9 @@ If you would like to work with me, feel free to contact me through my deployed s
 
 ## Screenshots
 
-![Top Screenshot](assets/screenshots/top-screenshot.png)
-![Mid Screenshot](assets/screenshots/mid-screenshot.png)
-![Bottom Screenshot](assets/screenshots/bottom-screenshot.png)
+![Top Screenshot](assets/screenshots/readme-images/top-screenshot.png)
+![Mid Screenshot](assets/screenshots/readme-images/mid-screenshot.png)
+![Bottom Screenshot](assets/screenshots/readme-images/bottom-screenshot.png)
 
 ### Contributions
 At this moment, I am currently not accepting contributions for this project.
