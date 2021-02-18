@@ -119,7 +119,7 @@ h5 {
 }
 
 .contact {
-  padding: 100px;
+  padding: min(100px, 2vw);
 }
 
 .emailMe {
@@ -134,7 +134,7 @@ h5 {
 
 .se-details {
   background-color: #fff0e9;
-  padding: 100px 0 100px 0;
+  padding: min(100px, 3vh) 0;
   color: #6d5850;
 }
 
@@ -205,8 +205,12 @@ h5 {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .portfolio-prev {
-  padding: 30px;
+  padding: min(2rem, 2vw);
 }
 
 
@@ -332,26 +336,69 @@ textarea {
   background-color: #bd6a9a;
 }
 
+.primary-button {
+  min-height: 3rem;
+  min-width: 3rem;
+  margin: 2rem;
+  border: none;
+  background-color: white;
+  border-radius: .5rem;
+  cursor: pointer;
+  padding: .5rem 1rem;
+  box-shadow: rgb(235 235 235) 0px 6px 0px;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #bd6a9a;
+  display: inline-block;
+}
+
+.primary-button:active{
+  outline: none;
+  box-shadow: none;
+  border: none;
+  transition: color 0.5s ease-in-out 0s;
+  margin-bottom: .5rem;
+  margin-top: 2.5rem;
+}
+
+.primary-button:focus{
+  outline: none;
+
+  border: none;
+}
 .portfolio-prev  h2 {
   text-align: center;
   font-family: "Sifonn Pro";
 }
 
-.project > img {
-  width: 30%;
-  border: .5rem solid rgba(250,250,250,1);
-  -webkit-box-shadow: 5px 5px 2px 0 #6d5850;
-  -moz-box-shadow: 5px 5px 2px 0 #6d5850;
-  box-shadow: 5px 5px 2px 0 #6d5850;
-  /* outline: .5rem solid #173753; */
+.project {
+  flex-wrap: wrap;
 }
 
 .project + .project {
   margin-top: 3rem;
 }
 
+.project  img {
+  border: .5rem solid rgba(250,250,250,1);
+  -webkit-box-shadow: 5px 5px 2px 0 #6d5850;
+  -moz-box-shadow: 5px 5px 2px 0 #6d5850;
+  box-shadow: 5px 5px 2px 0 #6d5850;
+  /* outline: .5rem solid #173753; */
+  border-radius: .5rem;
+  width: 100%;
+}
+
 .project-description {
-  padding: 3rem;
+  padding: min(3rem, 3vw);
+  flex: 1 1 70%;
+}
+
+.project-media {
+  flex: 1 1 30%;
+  min-width: 13rem;
+
 }
 
 /*
@@ -400,11 +447,17 @@ textarea {
   justify-content: space-around;
 }
 
+.mailing-list {
+  flex: 1 1 70%;
+  padding-right: min(1rem, 2vw);
+}
+
 .resume{
   text-align: center;
-
+  /* margin-left: min(1rem, 2vw); */
   border: 20px solid #173753;
-  width: 33%;
+  flex: 1 1 30%;
+
 }
 
 .resume > * {
@@ -433,6 +486,13 @@ textarea {
   padding: 0 50px;
 }
 
+@media only screen and (max-width: 903px) {
+  .se-details > section > section.flex-sidebar-side {
+    border-left: 0;
+    margin-bottom: 2rem;
+  }
+}
+
 .se-details > section > section.cards > .card > section{
   outline: 3px solid white;
   outline-offset: -25px;
@@ -458,7 +518,7 @@ textarea {
 
 }
 
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 700px) {
   section {
   }
 }
@@ -466,4 +526,4 @@ textarea {
 @media (min-width: 701px) and (max-width: 1000) {
   section {
     }
-}
+} */
